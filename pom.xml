@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.19.RELEASE</version>
+    </parent>
+    <groupId>jsimao71</groupId>
+    <artifactId>superheros</artifactId>
+    <version>0.0.1.SNAPSHOOT</version>
+    <name>Superheros</name>
+    <description>xx</description>
+    <properties>
+        <java.version>8</java.version>
+        <einnovator.version>0.1.RELEASE</einnovator.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins/>
+        <extensions/>
+    </build>
+    <repositories>
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>central</id>
+            <name>Maven Repository</name>
+            <url>http://repo1.maven.org/maven2</url>
+        </repository>
+        <repository>
+            <id>einnovator</id>
+            <name>EInnovator</name>
+            <url>https://einnovator-mvnrepo.s3.amazonaws.com/release</url>
+        </repository>
+    </repositories>
+</project>
